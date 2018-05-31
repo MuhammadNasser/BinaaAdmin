@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "448965937257",
+    "firebase_url": "https://binaaadmin.firebaseio.com",
+    "project_id": "binaaadmin",
+    "storage_bucket": "binaaadmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448965937257:android:98a047f413c04f91",
+        "android_client_info": {
+          "package_name": "com.binaa.binaaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448965937257-uuh90hbn5q65oafafbppk9s1jo9ndlgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqRnL1YPt05NX6hZ6d4sjBZI7B8YvwSj0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

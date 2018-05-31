@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayLight2">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <com.binaa.binaaadmin.views.PagerSlidingTabStrip
+                android:id="@+id/pagerSlidingTabStrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:minHeight="10dp"
+                android:minWidth="30dp"
+                android:tag="sw320dp" />
+
+            <com.binaa.binaaadmin.views.TextViewRobotoRegular
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:background="@color/blue60"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingBottom="10dp"
+                android:paddingEnd="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeXSmall"
+                tools:ignore="RelativeOverlap" />
+
+            <com.binaa.binaaadmin.views.TextViewRobotoRegular
+                android:id="@+id/textViewCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relativeLayout1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/red"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingBottom="10dp"
+                android:paddingEnd="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSizeXSmall" />
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewPager"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:layoutDirection="ltr"
+                tools:targetApi="jelly_bean_mr1">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        tools:ignore="RelativeOverlap,RtlCompat">
+
+                        <ImageView
+                            android:id="@+id/imageViewArea"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_area" />
+
+                        <com.binaa.binaaadmin.views.TextViewRobotoLight
+                            android:id="@+id/textViewArea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageViewArea"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/area" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:id="@+id/imageViewBedrooms"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_bedrooms" />
+
+                        <com.binaa.binaaadmin.views.TextViewRobotoLight
+                            android:id="@+id/textViewBedrooms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageViewBedrooms"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/bedrooms" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        tools:ignore="RelativeOverlap,RtlCompat">
+
+                        <ImageView
+                            android:id="@+id/imageViewBathrooms"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_bathrooms" />
+
+                        <com.binaa.binaaadmin.views.TextViewRobotoLight
+                            android:id="@+id/textViewBathrooms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageViewBathrooms"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/bathrooms" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <com.binaa.binaaadmin.views.TextViewRobotoLight
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayoutDetails"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:padding="5dp"
+                    android:textColor="@color/grayDark"
+                    android:textSize="@dimen/textSizeLarge"
+                    tools:text="@string/description" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/blackTransparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

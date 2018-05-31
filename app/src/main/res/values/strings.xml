@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BinaaAdmin</string>
+    <string name="e_mail">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="name">الأسم</string>
+    <string name="log_out">خروج</string>
+    <string name="phone">الهاتف</string>
+    <string name="country">الدوله</string>
+    <string name="passport">جواز السفر</string>
+    <string name="code">الكود</string>
+    <string name="Want_driver">هل تريد سائق ؟</string>
+    <string name="Want_travel">برنامج رحلات</string>
+    <string name="pickupFromAirport">خدمة توصيل من والى المطار</string>
+    <string name="rentCar"> ايجار سيارة خلال مدة الاقامة</string>
+    <string name="arrivalDate">تاريخ الوصول</string>
+    <string name="leaveDate">تاريخ المغادره</string>
+    <string name="car">سيارة</string>
+    <string name="hotel">فندق</string>
+    <string name="apartment">شقة</string>
+
+    <string name="description">3 Bedrooms (1 master), 3 bathrooms, kitchen, lounge, salon, (60 m2) terrace with garden, Central airconditioner </string>
+    <string name="property_code">كود: </string>
+    <string name="egp"> EGP</string>
+    <string name="details">التفاصيل</string>
+    <string name="area">المساحة: </string>
+    <string name="bedrooms">الغرف: </string>
+    <string name="bathrooms">الحمامات: </string>
+
+    <string name="m_">م²</string>
+
+    <array name="homeTabs">
+        <item>حجوزات الشقق</item>
+        <item>حجوزات السيارات</item>
+        <item>حجوزات الفنادق</item>
+    </array>
+</resources>
